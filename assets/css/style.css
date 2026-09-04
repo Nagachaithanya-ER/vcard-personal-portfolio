@@ -336,6 +336,15 @@ main {
   border-radius: 20px;
 }
 
+.avatar-box img {
+  display: block;
+  width: 80px;
+  aspect-ratio: 1;
+  object-fit: cover;
+  object-position: center 32%;
+  border-radius: inherit;
+}
+
 .info-content .name {
   color: var(--white-2);
   font-size: var(--fs-3);
@@ -543,6 +552,12 @@ main {
 .service-icon-box { margin-bottom: 10px; }
 
 .service-icon-box img { margin: auto; }
+
+.service-icon-box ion-icon {
+  color: var(--orange-yellow-crayola);
+  font-size: 40px;
+  margin: auto;
+}
 
 .service-content-box { text-align: center; }
 
@@ -829,6 +844,14 @@ main {
   line-height: 1.6;
 }
 
+.credential-link {
+  color: var(--orange-yellow-crayola);
+  transition: color var(--transition-1);
+}
+
+.credential-link:hover,
+.credential-link:focus { color: var(--vegas-gold); }
+
 
 /**
  * skills 
@@ -953,6 +976,8 @@ main {
 
 .project-item > a { width: 100%; }
 
+.project-card { width: 100%; }
+
 .project-img {
   position: relative;
   width: 100%;
@@ -1008,6 +1033,20 @@ main {
 }
 
 .project-item > a:hover img { transform: scale(1.1); }
+
+.project-summary {
+  color: var(--light-gray);
+  font-size: var(--fs-7);
+  font-weight: var(--fw-300);
+  line-height: 1.6;
+  margin: 10px 10px 0;
+}
+
+.project-tech {
+  color: var(--orange-yellow-crayola);
+  font-size: var(--fs-7);
+  margin: 8px 10px 0;
+}
 
 .project-title,
 .project-category { margin-left: 10px; }
@@ -1220,6 +1259,19 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover { background: var(--border-gradient-onyx); }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
+
+.contact-options { margin-top: 25px; }
+
+.contact-actions {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+@media (min-width: 580px) {
+  .contact-actions { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
 
 
 
